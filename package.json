@@ -1,39 +1,45 @@
 {
-  "name": "webrtc-signal-http",
-  "version": "2.0.1",
-  "description": "opinionated webrtc signal provider using http as a protocol",
-  "main": "dist/lib/index.js",
-  "types": "dist/lib/index.d.ts",
-  "files": [
-    "dist/**/*"
+  "_args": [
+    [
+      "webrtc-signal-http@2.0.0",
+      "C:\\Users\\doubleme\\Downloads\\signal-3dstk-master"
+    ]
   ],
-  "directories": {
-    "lib": "lib",
-    "test": "test"
+  "_from": "webrtc-signal-http@2.0.0",
+  "_id": "webrtc-signal-http@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-OybYembz5TVgeItvLeSJIYeHF3Z1nxTj8ojq2ZUNUef5mlfGPdCQnRUy340lHekFKGBlannFn+Q4wW4x1hXsTg==",
+  "_location": "/webrtc-signal-http",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "webrtc-signal-http@2.0.0",
+    "name": "webrtc-signal-http",
+    "escapedName": "webrtc-signal-http",
+    "rawSpec": "2.0.0",
+    "saveSpec": null,
+    "fetchSpec": "2.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/webrtc-signal-http/-/webrtc-signal-http-2.0.0.tgz",
+  "_spec": "2.0.0",
+  "_where": "C:\\Users\\doubleme\\Downloads\\signal-3dstk-master",
+  "author": {
+    "name": "Ben Greenier"
   },
   "bin": {
-    "webrtc-signal-http": "./dist/index.js"
+    "webrtc-signal-http": "./index.js"
   },
-  "scripts": {
-    "test": "ts-mocha test/**/*.ts",
-    "prepare": "npm run build",
-    "build": "tsc -p .",
-    "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "node dist/index.js"
-  },
-  "keywords": [
-    "webrtc",
-    "signal"
-  ],
-  "author": "Ben Greenier",
-  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "express-bunyan-logger": "^1.3.2",
-    "strict-event-emitter-types": "^2.0.0"
+    "express-bunyan-logger": "^1.3.2"
   },
+  "description": "opinionated webrtc signal provider using http as a protocol",
   "devDependencies": {
     "@types/cors": "^2.8.4",
     "@types/express": "^4.16.2",
@@ -45,5 +51,24 @@
     "tslint": "^5.18.0",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.4.5"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "./**/*"
+  ],
+  "keywords": [
+    "webrtc",
+    "signal"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "webrtc-signal-http",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "types": "./lib/index.d.ts",
+  "version": "2.0.0"
 }
